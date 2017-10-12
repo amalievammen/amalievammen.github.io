@@ -1,0 +1,392 @@
+* {
+    font-family: 'Open Sans Condensed', sans-serif;
+    box-sizing: border-box;
+}
+
+/*BODY*/
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*LOGO*/
+
+.logo {
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+    padding-right: 15px;
+}
+
+/*NAVIGATION BAR*/
+
+.nav {
+    margin-top: 25px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 19px;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+.nav * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.nav li {
+    display: inline-block;
+    float: none;
+    list-style: outside none none;
+    margin: 0 0.8em;
+    padding: 5px;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 0.5em 17px;
+    color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.nav a:before {
+    left: 10%;
+    right: 10%;
+    top: 50%;
+    content: '';
+    border-left: 12px solid #3b3b3b;
+    border-right: 12px solid #3b3b3b;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 2px;
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.nav a:hover,
+.nav .current a {
+    color: #000000;
+}
+
+.nav a:hover:before,
+.nav .current a:before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+/*SOCIAL MEDIA ICONS*/
+
+.social {
+    margin-top: -3.6%;
+    margin-bottom: 5%;
+}
+
+.facebook,
+.instagram,
+.twitter {
+    display: inline;
+    float: right;
+    width: 30px;
+    height: 30px;
+}
+
+/*OVERSKRIFT*/
+
+.artikler h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 3px;
+    font-weight: 100;
+    width: 80%;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+/*ARTIKLER BAGGRUNDSFARVE*/
+
+.artikler {
+    background-color: #ededea;
+    padding-bottom: 70px;
+}
+
+/*DE TRE FØRSTE ARTIKLER PÅ FORSIDEN*/
+
+.first section {
+    float: left;
+    display: block;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: justify;
+    width: 33.33%;
+    margin: 2% auto;
+    margin-top: 120px;
+}
+
+.first {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+/*DE TRE NÆSTE ARTIKLER PÅ FORSIDEN*/
+
+.second section {
+    float: left;
+    display: block;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: justify;
+    width: 33.33%;
+    
+    margin: 2% auto;
+}
+
+.second {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+/*ARTIKLERNES OVERSKRIFT*/
+
+h2 {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 21px;
+}
+
+/*MADPLAN*/
+
+.madplan section {
+    float: left;
+    display: block;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: justify;
+    width: 33.33%;
+    margin: 2% auto;
+    margin-top: 40px;
+}
+
+.madplan {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.suppe{
+    padding-top: 80px;
+}
+
+.madplan p{
+    margin-top: 0px;
+}
+
+/*TIPS TIL LØBETUREN*/
+
+.run section {
+    float: left;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    width: 33.33%;
+    margin: 2% auto;
+    margin-top: 120px;
+}
+
+.run {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+/*VÆK MED HOVEDPINE OG TRÆTHED*/
+
+.tekstbokse section{
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    width: 40%;
+    margin: 2% auto;
+    margin-top: 40px;
+}
+
+.hovedpine{
+    display: inline-block;
+    text-align: center;
+    width: 100%;  
+}
+
+.hovedpine img{
+    margin-top: 120px;
+    
+}
+
+/*HOVER EFFECT*/  
+/*http://littlesnippets.net/category/categories/image-hovers/page/7/*/
+
+.hovereffect {
+  position: relative;
+  overflow: hidden;
+  margin: 0% auto;
+  color: #000000;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+.hovereffect * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.hovereffect img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.hovereffect figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hovereffect h3 {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+}
+
+.hovereffect h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+    font-size: 23px;
+}
+
+.hovereffect a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.hovereffect:hover > img,
+.hovereffect.hover > img {
+  opacity: 0.2;
+}
+
+.hovereffect:hover h3,
+.hovereffect.hover h3 {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/*FOOTER*/
+
+footer {
+    width: 100%;
+    height: 200PX;
+    background-color: #3b3b3b;
+    color: #ededea;
+}
+
+footer section {
+    float: left;
+    display: block;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 33.33%;
+    
+    margin: 2% auto;
+}
+
+footer section h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+footer li {
+    text-align: left;
+    list-style: none;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+.navn, .email {
+    width: 100px;
+    height: 25px;
+    background-color: #ededea;
+    border: solid #ededea;
+    color: #3b3b3b;
+    text-align: center;
+    font-size: 15px;
+}
+
+.tilmelding{
+    width: 100px;
+    height: 25px;
+    background-color: #ededea;
+    border: solid #ededea;
+    color: #3b3b3b;
+    text-align: center;
+    font-size: 15px;
+}
+
+/*RESPONSIVE WEB DESIGN*/
+
+/*MOBILE*/
+@media (max-width 767px) {
+    
+    
+    
+}
+
+/*TABLETS*/
+@media (min-width 768px) and (max-width 1023px) {
+    
+    
+    
+}
+
+/*DESKTOP*/
+@media (min-width 1024) {
+    
+    
+    
+}
+
+
+
+
