@@ -1,1 +1,0 @@
-# amalievammen.github.io
